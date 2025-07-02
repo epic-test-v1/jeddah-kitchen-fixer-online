@@ -2,6 +2,13 @@ import { Phone, MapPin, Clock, Star, Wrench, Settings, CheckCircle } from "lucid
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+// Declare gtag for TypeScript
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
+}
+
 const Index = () => {
   const services = [
     {
@@ -24,8 +31,8 @@ const Index = () => {
   const handleCallNow = () => {
     window.location.href = "tel:0547815202";
     // Track call for analytics
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'phone_call', {
+    if (window.gtag) {
+      window.gtag('event', 'phone_call', {
         event_category: 'contact',
         event_label: 'header_call_button'
       });
@@ -35,8 +42,8 @@ const Index = () => {
   const handleWhatsApp = () => {
     window.open("https://wa.me/966547815202?text=مرحباً، أريد الاستفسار عن خدمات صيانة مطابخ الألمنيوم في جدة", "_blank");
     // Track WhatsApp click for analytics
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'whatsapp_click', {
+    if (window.gtag) {
+      window.gtag('event', 'whatsapp_click', {
         event_category: 'contact',
         event_label: 'header_whatsapp_button'
       });
