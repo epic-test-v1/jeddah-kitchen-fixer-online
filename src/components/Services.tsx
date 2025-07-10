@@ -24,7 +24,7 @@ const Services = () => {
   return (
     <section className="py-16" id="services">
       <div className="container mx-auto px-4">
-        <h3 className="text-3xl font-bold text-center mb-4 text-gray-800">خدمات صيانة مطابخ الألمنيوم في جدة</h3>
+        <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">خدمات صيانة مطابخ الألمنيوم في جدة</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           نقدم مجموعة شاملة من خدمات صيانة وإصلاح مطابخ الألمنيوم لسكان جدة بأسعار تنافسية وجودة عالية
         </p>

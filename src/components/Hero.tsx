@@ -1,6 +1,8 @@
 
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ImageOptimized from "@/components/ImageOptimized";
+import heroKitchen from "@/assets/hero-kitchen.jpg";
 
 interface HeroProps {
   onCallNow: () => void;
@@ -9,12 +11,12 @@ interface HeroProps {
 
 const Hero = ({ onCallNow, onWhatsApp }: HeroProps) => {
   return (
-    <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+    <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white" itemScope itemType="https://schema.org/LocalBusiness">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6" itemProp="name">
           أفضل خدمات صيانة مطابخ الألمنيوم في جدة
-        </h2>
-        <p className="text-xl mb-4 max-w-3xl mx-auto">
+        </h1>
+        <p className="text-xl mb-4 max-w-3xl mx-auto" itemProp="description">
           نقدم خدمات صيانة وإصلاح مطابخ الألمنيوم في جدة بأعلى جودة وأفضل الأسعار. 
           خبرة أكثر من 10 سنوات في صيانة وتركيب المطابخ.
         </p>
@@ -40,6 +42,17 @@ const Hero = ({ onCallNow, onWhatsApp }: HeroProps) => {
           >
             تواصل عبر الواتساب
           </Button>
+        </div>
+        
+        <div className="mt-12 max-w-4xl mx-auto">
+          <ImageOptimized
+            src={heroKitchen}
+            alt="مطبخ ألمنيوم حديث في جدة - خدمات صيانة احترافية"
+            className="rounded-lg shadow-xl"
+            width={800}
+            height={450}
+            priority={true}
+          />
         </div>
       </div>
     </section>

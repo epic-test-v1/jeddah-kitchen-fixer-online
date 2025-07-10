@@ -6,6 +6,8 @@ import Features from "@/components/Features";
 import Contact from "@/components/Contact";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
+import SEOOptimized from "@/components/SEOOptimized";
+import StructuredData from "@/components/StructuredData";
 
 // Declare gtag for TypeScript
 declare global {
@@ -38,15 +40,19 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100" dir="rtl">
-      <Header />
-      <Hero onCallNow={handleCallNow} onWhatsApp={handleWhatsApp} />
-      <Services />
-      <Features />
-      <Contact />
-      <CallToAction onCallNow={handleCallNow} onWhatsApp={handleWhatsApp} />
-      <Footer />
-    </div>
+    <>
+      <SEOOptimized />
+      <StructuredData />
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100" dir="rtl">
+        <Header />
+        <Hero onCallNow={handleCallNow} onWhatsApp={handleWhatsApp} />
+        <Services />
+        <Features />
+        <Contact />
+        <CallToAction onCallNow={handleCallNow} onWhatsApp={handleWhatsApp} />
+        <Footer />
+      </div>
+    </>
   );
 };
 
