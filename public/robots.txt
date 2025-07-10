@@ -17,4 +17,4 @@ User-agent: *
 Allow: /
 Crawl-delay: 2
 
-Sitemap: https://kitchen-maintenance-jeddah.lovable.app/sitemap.xml
+Sitemap: https://jeddah-aluminum-kitchen.com/sitemap.xml
