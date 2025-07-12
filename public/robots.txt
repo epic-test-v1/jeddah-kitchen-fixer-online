@@ -26,7 +26,6 @@ User-agent: *
 Allow: /
 Crawl-delay: 2
 
-# Block access to admin areas and sensitive files
 Disallow: /admin/
 Disallow: /private/
 Disallow: /api/
@@ -36,15 +35,12 @@ Disallow: /*.json$
 Disallow: /*.xml$
 Disallow: /*.txt$
 
-# Allow important files
 Allow: /sitemap.xml
 Allow: /robots.txt
 Allow: /favicon.ico
 Allow: /og-image.jpg
 
-# Sitemap location
 Sitemap: https://jeddah-aluminum-kitchen.com/sitemap.xml
 
-# Additional sitemaps for different content types
 Sitemap: https://jeddah-aluminum-kitchen.com/sitemap-services.xml
 Sitemap: https://jeddah-aluminum-kitchen.com/sitemap-locations.xml
