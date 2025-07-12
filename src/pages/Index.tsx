@@ -11,7 +11,6 @@ import StructuredData from "@/components/StructuredData";
 import PerformanceOptimizer from "@/components/PerformanceOptimizer";
 import FAQStructuredData from "@/components/FAQStructuredData";
 
-// Declare gtag for TypeScript
 declare global {
   interface Window {
     gtag?: (...args: any[]) => void;
@@ -21,7 +20,6 @@ declare global {
 const Index = () => {
   const handleCallNow = () => {
     window.location.href = "tel:0547815202";
-    // Track call for analytics
     if (window.gtag) {
       window.gtag('event', 'phone_call', {
         event_category: 'contact',
@@ -33,7 +31,6 @@ const Index = () => {
 
   const handleWhatsApp = () => {
     window.open("https://wa.me/966547815202?text=مرحباً، أريد الاستفسار عن خدمات صيانة مطابخ الألمنيوم في جدة", "_blank");
-    // Track WhatsApp click for analytics
     if (window.gtag) {
       window.gtag('event', 'whatsapp_click', {
         event_category: 'contact',
@@ -43,7 +40,6 @@ const Index = () => {
     }
   };
 
-  // FAQ data for structured data
   const faqData = [
     {
       question: "ما هي خدمات صيانة مطابخ الألمنيوم التي تقدمونها؟",
