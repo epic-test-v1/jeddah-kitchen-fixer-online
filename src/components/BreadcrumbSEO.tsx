@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet-async";
 
 interface BreadcrumbItem {
-  name: string;
-  url: string;
+  label: string;
+  href: string;
 }
 
 interface BreadcrumbSEOProps {
@@ -17,8 +17,8 @@ const BreadcrumbSEO = ({ items, currentPage }: BreadcrumbSEOProps) => {
     "itemListElement": items.map((item, index) => ({
       "@type": "ListItem",
       "position": index + 1,
-      "name": item.name,
-      "item": item.url
+      "name": item.label,
+      "item": item.href
     }))
   };
 

@@ -92,8 +92,8 @@ const SEOOptimized = ({
       <link rel="canonical" href={canonical} />
       
       {/* Language Alternates */}
-      <link rel="alternate" hreflang="ar" href={canonical} />
-      <link rel="alternate" hreflang="x-default" href={canonical} />
+      <link rel="alternate" hrefLang="ar" href={canonical} />
+      <link rel="alternate" hrefLang="x-default" href={canonical} />
       
       {/* Theme and App Icons */}
       <meta name="theme-color" content="#3b82f6" />
