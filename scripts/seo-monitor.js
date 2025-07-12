@@ -1,9 +1,5 @@
 #!/usr/bin/env node
 
-/**
- * SEO Monitoring Script for Jeddah Kitchen Repair Website
- * This script helps monitor key SEO metrics and performance indicators
- */
 
 const https = require('https');
 const fs = require('fs');
@@ -21,7 +17,6 @@ class SEOMonitor {
     ];
   }
 
-  // Check if website is accessible
   async checkWebsiteAccessibility() {
     return new Promise((resolve) => {
       https.get(this.website, (res) => {
@@ -34,7 +29,6 @@ class SEOMonitor {
     });
   }
 
-  // Check robots.txt
   async checkRobotsTxt() {
     return new Promise((resolve) => {
       https.get(`${this.website}/robots.txt`, (res) => {
@@ -47,7 +41,6 @@ class SEOMonitor {
     });
   }
 
-  // Check sitemap
   async checkSitemap() {
     return new Promise((resolve) => {
       https.get(`${this.website}/sitemap.xml`, (res) => {
@@ -60,7 +53,6 @@ class SEOMonitor {
     });
   }
 
-  // Check meta tags (basic check)
   async checkMetaTags() {
     return new Promise((resolve) => {
       https.get(this.website, (res) => {
@@ -89,7 +81,6 @@ class SEOMonitor {
     });
   }
 
-  // Generate SEO report
   async generateReport() {
     console.log('\n🔍 SEO Monitoring Report');
     console.log('========================\n');
@@ -108,7 +99,6 @@ class SEOMonitor {
     const overallScore = [websiteAccess, robotsTxt, sitemap, metaTags].filter(Boolean).length;
     console.log(`\n🎯 Overall SEO Health: ${overallScore}/4 (${(overallScore/4*100).toFixed(0)}%)`);
     
-    // Generate recommendations
     console.log('\n💡 Recommendations:');
     if (!websiteAccess) {
       console.log('- Fix website accessibility issues');
@@ -122,8 +112,7 @@ class SEOMonitor {
     if (!metaTags) {
       console.log('- Optimize meta tags for better SEO');
     }
-    
-    // Save report to file
+
     const report = {
       date: new Date().toISOString(),
       website: this.website,
@@ -148,7 +137,6 @@ class SEOMonitor {
     console.log(`\n📄 Report saved to: ${reportPath}`);
   }
 
-  // Check Core Web Vitals (basic simulation)
   checkCoreWebVitals() {
     console.log('\n⚡ Core Web Vitals (Simulated):');
     console.log('- LCP (Largest Contentful Paint): ~2.1s ✅');
@@ -160,7 +148,6 @@ class SEOMonitor {
     console.log('- Use Lighthouse in Chrome DevTools');
   }
 
-  // SEO checklist
   showSEOChecklist() {
     console.log('\n📋 SEO Checklist:');
     console.log('==================');
@@ -184,7 +171,6 @@ class SEOMonitor {
   }
 }
 
-// Run the monitoring
 async function main() {
   const monitor = new SEOMonitor();
   
