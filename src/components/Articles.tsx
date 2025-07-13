@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import SocialShare from "@/components/SocialShare";
 import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -88,12 +89,18 @@ const Articles = () => {
         </div>
 
         <div className="text-center">
-          <Link to="/articles">
-            <Button variant="outline" className="px-8 py-3">
-              <BookOpen className="ml-2 h-5 w-5" />
-              عرض جميع المقالات
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to="/articles">
+              <Button variant="outline" className="px-8 py-3">
+                <BookOpen className="ml-2 h-5 w-5" />
+                عرض جميع المقالات
+              </Button>
+            </Link>
+            <SocialShare 
+              title="مقالات صيانة مطابخ الألمنيوم في جدة"
+              description="اكتشف أحدث النصائح والمعلومات حول صيانة مطابخ الألمنيوم"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import SEOOptimized from "@/components/SEOOptimized";
 import BreadcrumbSEO from "@/components/BreadcrumbSEO";
+import SocialShare from "@/components/SocialShare";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -76,7 +77,7 @@ const Articles = () => {
         canonical="https://jeddah-aluminum-kitchen.com/articles"
       />
       
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100" dir="rtl">
+      <div className="min-h-screen bg-background" dir="rtl">
         <Header />
         
         <main className="pt-20">
@@ -97,6 +98,13 @@ const Articles = () => {
                 اكتشف أحدث المقالات والنصائح حول صيانة وتركيب مطابخ الألمنيوم في جدة. 
                 معلومات مفيدة من خبراء المجال لمساعدتك في الحفاظ على مطبخك.
               </p>
+              
+              <div className="flex justify-center">
+                <SocialShare 
+                  title="مقالات صيانة مطابخ الألمنيوم في جدة"
+                  description="اكتشف أحدث النصائح والمعلومات حول صيانة مطابخ الألمنيوم"
+                />
+              </div>
             </div>
           </section>
 

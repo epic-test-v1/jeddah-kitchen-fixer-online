@@ -55,7 +55,7 @@
     <meta name="twitter:site" content="@jeddah_kitchen" />
     <meta name="twitter:creator" content="@jeddah_kitchen" />
 
-    <!-- Canonical URL -->
+    <!-- Canonical URL - Single canonical tag only -->
     <link rel="canonical" href="https://jeddah-aluminum-kitchen.com/" />
 
     <!-- Structured Data for Local Business -->
@@ -159,27 +159,32 @@
     <link rel="preload" href="/og-image.jpg" as="image">
     
     <!-- Favicon and app icons -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
     <link rel="manifest" href="/site.webmanifest">
     
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEDDAH2024KM"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX', {
+      gtag('config', 'G-JEDDAH2024KM', {
         page_title: 'صيانة مطابخ الألمنيوم في جدة',
         page_location: 'https://jeddah-aluminum-kitchen.com/',
         custom_map: {
-          'custom_parameter_1': 'phone_number',
-          'custom_parameter_2': 'service_type'
+          'phone_calls': 'custom_parameter_1',
+          'whatsapp_clicks': 'custom_parameter_2',
+          'service_requests': 'custom_parameter_3'
         }
       });
     </script>
+
+    <!-- Performance and loading optimizations -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
   </head>
 
   <body>

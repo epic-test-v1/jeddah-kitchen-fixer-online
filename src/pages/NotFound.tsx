@@ -9,7 +9,7 @@ const NotFound = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100 flex items-center justify-center px-4" dir="rtl">
+    <div className="min-h-screen bg-background flex items-center justify-center px-4" dir="rtl">
       <Card className="max-w-2xl w-full text-center">
         <CardHeader>
           <div className="mx-auto mb-6">
@@ -41,6 +41,16 @@ const NotFound = () => {
               <Phone className="ml-2 h-5 w-5" />
               اتصل الآن: 0547815202
             </Button>
+          </div>
+
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <h4 className="text-lg font-semibold text-gray-800 mb-3">روابط مفيدة:</h4>
+            <div className="grid grid-cols-2 gap-4 text-sm">
+              <Link to="/services" className="text-blue-600 hover:text-blue-700">خدماتنا</Link>
+              <Link to="/contact" className="text-blue-600 hover:text-blue-700">تواصل معنا</Link>
+              <Link to="/articles" className="text-blue-600 hover:text-blue-700">المقالات</Link>
+              <Link to="/about" className="text-blue-600 hover:text-blue-700">من نحن</Link>
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
