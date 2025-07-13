@@ -16,7 +16,7 @@ const Hero = ({ onCallNow, onWhatsApp }: HeroProps) => {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(${heroKitchen})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'scroll'
       }}
       itemScope 
       itemType="https://schema.org/LocalBusiness"

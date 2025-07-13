@@ -11,6 +11,7 @@ const Header = () => {
   const navItems = [
     { label: "الرئيسية", href: "/" },
     { label: "خدماتنا", href: "/services" },
+    { label: "المقالات", href: "/articles" },
     { label: "من نحن", href: "/about" },
     { label: "تواصل معنا", href: "/contact" }
   ];
