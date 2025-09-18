@@ -25,10 +25,25 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom'],
-          router: ['react-router-dom'],
-          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
-          utils: ['clsx', 'tailwind-merge'],
+          // Core React chunks
+          'react-vendor': ['react', 'react-dom'],
+          'react-router': ['react-router-dom'],
+          
+          // UI Components chunks
+          'radix-ui': [
+            '@radix-ui/react-dialog', 
+            '@radix-ui/react-dropdown-menu',
+            '@radix-ui/react-accordion',
+            '@radix-ui/react-tooltip'
+          ],
+          
+          // Query and utilities
+          'tanstack': ['@tanstack/react-query'],
+          'utils': ['clsx', 'tailwind-merge', 'class-variance-authority'],
+          'icons': ['lucide-react'],
+          
+          // Performance tracking
+          'analytics': ['web-vitals', 'react-helmet-async'],
         },
       },
     },
@@ -38,16 +53,24 @@ export default defineConfig(({ mode }) => ({
       compress: {
         drop_console: mode === 'production',
         drop_debugger: mode === 'production',
+        pure_funcs: mode === 'production' ? ['console.log', 'console.info'] : [],
       },
     },
     
     cssCodeSplit: true,
     
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 500,
   },
   
   optimizeDeps: {
-    include: ['react', 'react-dom', 'react-router-dom'],
+    include: [
+      'react', 
+      'react-dom', 
+      'react-router-dom',
+      '@tanstack/react-query',
+      'lucide-react'
+    ],
+    exclude: ['web-vitals']
   },
   
   define: {
