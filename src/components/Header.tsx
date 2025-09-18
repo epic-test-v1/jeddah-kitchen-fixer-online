@@ -56,6 +56,7 @@ const Header = () => {
             size="icon"
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="فتح القائمة الرئيسية"
           >
             <Menu className="h-6 w-6" />
           </Button>

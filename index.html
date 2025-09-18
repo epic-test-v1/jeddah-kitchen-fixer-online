@@ -165,8 +165,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
     <link rel="manifest" href="/site.webmanifest">
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEDDAH2024KM"></script>
+    <!-- Google Analytics - Optimized -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -180,21 +179,40 @@
           'service_requests': 'custom_parameter_3'
         }
       });
+      
+      // Load Google Analytics asynchronously after page load
+      window.addEventListener('load', function() {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-JEDDAH2024KM';
+        document.head.appendChild(script);
+      });
     </script>
 
-    <!-- Google Ads -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17574639487"></script>
+    <!-- Google Ads - Optimized -->
     <script>
+      // Preload Google Ads
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'AW-17574639487');
+      
+      // Load Google Ads asynchronously after page load
+      window.addEventListener('load', function() {
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17574639487';
+        document.head.appendChild(script);
+      });
     </script>
 
     <!-- Performance and loading optimizations -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    <style>
+      /* Critical CSS for above-the-fold content */
+      body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+      #root { min-height: 100vh; }
+      .loading { display: flex; justify-content: center; align-items: center; height: 100vh; }
+    </style>
   </head>
 
   <body>

@@ -18,8 +18,8 @@ const SEOOptimized = ({
   title = "صيانة مطابخ الألمنيوم في جدة - خدمات احترافية | 0547815202",
   description = "أفضل خدمات صيانة وإصلاح مطابخ الألمنيوم في جدة. صيانة شاملة، تركيب، وإصلاح جميع أنواع المطابخ بأسعار مناسبة وجودة عالية. اتصل الآن 0547815202 - خدمة 24 ساعة",
   keywords = "صيانة مطابخ الألمنيوم جدة، إصلاح مطابخ جدة، تركيب مطابخ الألمنيوم، صيانة مطابخ، مطابخ الألمنيوم جدة، نجار مطابخ جدة، إصلاح خزائن المطبخ، صيانة أدراج المطبخ، تغيير مفصلات المطبخ، صيانة مطابخ 24 ساعة جدة، صيانة مطابخ في جدة، إصلاح مطابخ الألمنيوم، تركيب مطابخ جديدة جدة، صيانة خزائن المطبخ، إصلاح أدراج المطبخ، تغيير مفصلات خزائن المطبخ، صيانة مطابخ فاخرة جدة، إصلاح مطابخ حديثة، تركيب مطابخ مودرن، صيانة مطابخ كلاسيك",
-  canonical = "https://jeddah-aluminum-kitchen.com/",
-  ogImage = "https://jeddah-aluminum-kitchen.com/og-image.jpg",
+  canonical = "https://www.jeddah-aluminum-kitchen.com/",
+  ogImage = "https://www.jeddah-aluminum-kitchen.com/og-image.jpg",
   type = "website",
   publishedTime,
   modifiedTime,
@@ -116,7 +116,7 @@ const SEOOptimized = ({
       <meta name="business:contact_data:country_name" content="المملكة العربية السعودية" />
       <meta name="business:contact_data:phone_number" content="+966547815202" />
       <meta name="business:contact_data:email" content="info@jeddah-aluminum-kitchen.com" />
-      <meta name="business:contact_data:website" content="https://jeddah-aluminum-kitchen.com" />
+      <meta name="business:contact_data:website" content="https://www.jeddah-aluminum-kitchen.com" />
       
       {/* Service Area */}
       <meta name="business:service_area:locality" content="جدة" />
