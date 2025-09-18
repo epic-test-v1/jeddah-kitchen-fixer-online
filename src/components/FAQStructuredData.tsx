@@ -10,7 +10,7 @@ interface FAQStructuredDataProps {
   pageUrl?: string;
 }
 
-const FAQStructuredData = ({ faqs, pageUrl = "https://jeddah-aluminum-kitchen.com/faq" }: FAQStructuredDataProps) => {
+const FAQStructuredData = ({ faqs, pageUrl = "https://www.jeddah-aluminum-kitchen.com/faq" }: FAQStructuredDataProps) => {
   const faqData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

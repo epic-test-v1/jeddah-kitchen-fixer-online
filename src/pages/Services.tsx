@@ -87,13 +87,13 @@ const Services = () => {
         title="خدمات صيانة مطابخ الألمنيوم في جدة - أفضل الأسعار والجودة"
         description="خدمات شاملة لصيانة وتركيب وإصلاح مطابخ الألمنيوم في جدة. فريق محترف، أسعار منافسة، ضمان شامل. اتصل الآن 0547815202"
         keywords="صيانة مطابخ ألمنيوم جدة, تركيب مطابخ ألمنيوم, إصلاح مطابخ, خدمات مطابخ جدة, صيانة ألمنيوم"
-        canonical="https://jeddah-aluminum-kitchen.com/services"
+        canonical="https://www.jeddah-aluminum-kitchen.com/services"
       />
       <StructuredData 
         type="Service"
         title="خدمات صيانة مطابخ الألمنيوم في جدة"
         description="خدمات شاملة لصيانة وتركيب وإصلاح مطابخ الألمنيوم في جدة مع ضمان الجودة"
-        url="https://jeddah-aluminum-kitchen.com/services"
+        url="https://www.jeddah-aluminum-kitchen.com/services"
       />
       
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100" dir="rtl">

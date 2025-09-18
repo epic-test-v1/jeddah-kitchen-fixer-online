@@ -62,7 +62,7 @@ const Neighborhoods = () => {
         <title>فني مطابخ جدة - خدمات في جميع الأحياء | 0547815202</title>
         <meta name="description" content="فني مطابخ الألمنيوم في جدة - نغطي جميع أحياء جدة بخدمات تركيب وصيانة المطابخ. اتصل الآن 0547815202" />
         <meta name="keywords" content="فني مطابخ جدة, صيانة مطابخ, تركيب مطابخ, مطابخ الألمنيوم, جدة" />
-        <link rel="canonical" href="https://jeddah-aluminum-kitchen.com/neighborhoods" />
+        <link rel="canonical" href="https://www.jeddah-aluminum-kitchen.com/neighborhoods" />
       </Helmet>
 
       <Header />

@@ -124,13 +124,13 @@ ${formData.email ? `البريد الإلكتروني: ${formData.email}` : ''}
         title="تواصل معنا - خدمات صيانة مطابخ الألمنيوم في جدة"
         description="تواصل مع أفضل فريق صيانة مطابخ الألمنيوم في جدة. خدمة 24/7، استشارة مجانية، أسعار منافسة. اتصل الآن 0547815202"
         keywords="تواصل معنا، صيانة مطابخ جدة، رقم صيانة مطابخ، خدمة عملاء، فني مطابخ جدة"
-        canonical="https://jeddah-aluminum-kitchen.com/contact"
+        canonical="https://www.jeddah-aluminum-kitchen.com/contact"
       />
       <StructuredData 
         type="LocalBusiness"
         title="تواصل مع خدمات صيانة مطابخ الألمنيوم في جدة"
         description="معلومات التواصل مع أفضل فريق صيانة مطابخ الألمنيوم في جدة"
-        url="https://jeddah-aluminum-kitchen.com/contact"
+        url="https://www.jeddah-aluminum-kitchen.com/contact"
       />
       
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100" dir="rtl">

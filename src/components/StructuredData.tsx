@@ -11,7 +11,7 @@ const StructuredData = ({
   type = "LocalBusiness", 
   title = "صيانة مطابخ الألمنيوم جدة",
   description = "خدمات صيانة وإصلاح مطابخ الألمنيوم في جدة بأسعار مناسبة وجودة عالية",
-  url = "https://jeddah-aluminum-kitchen.com/"
+  url = "https://www.jeddah-aluminum-kitchen.com/"
 }: StructuredDataProps) => {
   
   const getStructuredData = () => {

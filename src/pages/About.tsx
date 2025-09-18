@@ -114,13 +114,13 @@ const About = () => {
         title="من نحن - أفضل شركة صيانة مطابخ الألمنيوم في جدة"
         description="تعرف على فريق خبراء صيانة مطابخ الألمنيوم في جدة. خبرة 15+ سنة، فريق محترف، ضمان شامل. نقدم أفضل خدمات الصيانة والتركيب في جدة"
         keywords="من نحن، شركة صيانة مطابخ جدة، فريق متخصص، خبرة صيانة مطابخ، أفضل فنيين مطابخ جدة"
-        canonical="https://jeddah-aluminum-kitchen.com/about"
+        canonical="https://www.jeddah-aluminum-kitchen.com/about"
       />
       <StructuredData 
         type="LocalBusiness"
         title="من نحن - شركة صيانة مطابخ الألمنيوم في جدة"
         description="معلومات عن أفضل شركة صيانة مطابخ الألمنيوم في جدة وفريق العمل المتخصص"
-        url="https://jeddah-aluminum-kitchen.com/about"
+        url="https://www.jeddah-aluminum-kitchen.com/about"
       />
       
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-gray-100" dir="rtl">

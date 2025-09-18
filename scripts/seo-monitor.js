@@ -7,7 +7,7 @@ const path = require('path');
 
 class SEOMonitor {
   constructor() {
-    this.website = 'https://jeddah-aluminum-kitchen.com';
+    this.website = 'https://www.jeddah-aluminum-kitchen.com';
     this.targetKeywords = [
       'صيانة مطابخ الألمنيوم جدة',
       'إصلاح مطابخ جدة',

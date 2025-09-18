@@ -74,7 +74,7 @@ const Articles = () => {
         title="مقالات ونصائح صيانة مطابخ الألمنيوم في جدة"
         description="مقالات ونصائح مفيدة حول صيانة وتركيب مطابخ الألمنيوم في جدة. تعرف على أفضل الممارسات والحلول للمشاكل الشائعة"
         keywords="مقالات مطابخ ألمنيوم, نصائح صيانة مطابخ, تصميم مطابخ جدة, معلومات مطابخ ألمنيوم"
-        canonical="https://jeddah-aluminum-kitchen.com/articles"
+        canonical="https://www.jeddah-aluminum-kitchen.com/articles"
       />
       
       <div className="min-h-screen bg-background" dir="rtl">
