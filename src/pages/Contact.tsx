@@ -61,6 +61,16 @@ ${formData.email ? `البريد الإلكتروني: ${formData.email}` : ''}
     const whatsappUrl = `https://wa.me/966547815202?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
     
+    // Track form submission conversion
+    if ((window as any).trackFormSubmission) {
+      (window as any).trackFormSubmission();
+    }
+    
+    // Track service request conversion
+    if ((window as any).trackServiceRequest) {
+      (window as any).trackServiceRequest(formData.service);
+    }
+    
     if (window.gtag) {
       window.gtag('event', 'form_submission', {
         event_category: 'contact',

@@ -19,6 +19,12 @@ declare global {
 const Index = () => {
   const handleCallNow = () => {
     window.location.href = "tel:0547815202";
+    
+    // Track conversion
+    if ((window as any).trackPhoneCall) {
+      (window as any).trackPhoneCall();
+    }
+    
     if (window.gtag) {
       window.gtag('event', 'phone_call', {
         event_category: 'contact',
@@ -30,6 +36,12 @@ const Index = () => {
 
   const handleWhatsApp = () => {
     window.open("https://wa.me/966547815202?text=مرحباً، أريد الاستفسار عن خدمات صيانة مطابخ الألمنيوم في جدة", "_blank");
+    
+    // Track conversion
+    if ((window as any).trackWhatsAppClick) {
+      (window as any).trackWhatsAppClick();
+    }
+    
     if (window.gtag) {
       window.gtag('event', 'whatsapp_click', {
         event_category: 'contact',

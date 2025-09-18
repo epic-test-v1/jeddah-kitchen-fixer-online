@@ -185,58 +185,28 @@
         transport_type: 'beacon',
         custom_parameter_4: 'performance_optimized'
       });
-      
-      // Defer loading Google Analytics until after initial paint
-      function loadGA() {
-        const script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-JEDDAH2024KM';
-        document.head.appendChild(script);
-      }
-      
-      // Load after page is interactive
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadGA);
-      } else {
-        setTimeout(loadGA, 100);
-      }
     </script>
+    
+    <!-- Load Google Analytics immediately for proper tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEDDAH2024KM"></script>
 
-    <!-- Performance optimized Google Ads -->
+    <!-- Google Ads Conversion Tracking -->
     <script>
-      // Initialize Google Ads with performance optimizations
+      // Initialize Google Ads immediately for conversion tracking
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
       gtag('config', 'AW-17574639487', {
-        transport_type: 'beacon',
-        anonymize_ip: true
+        'allow_enhanced_conversions': true,
+        'send_page_view': true
       });
-      
-      // Defer Google Ads loading
-      function loadGoogleAds() {
-        const script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17574639487';
-        document.head.appendChild(script);
-      }
-      
-      // Load Google Ads after user interaction or after 3 seconds
-      let adsLoaded = false;
-      function loadAdsOnce() {
-        if (!adsLoaded) {
-          adsLoaded = true;
-          loadGoogleAds();
-        }
-      }
-      
-      // Load on user interaction
-      ['mousedown', 'touchstart', 'keydown', 'wheel'].forEach(function(event) {
-        document.addEventListener(event, loadAdsOnce, { once: true, passive: true });
-      });
-      
-      // Fallback: load after 3 seconds
-      setTimeout(loadAdsOnce, 3000);
     </script>
+    
+    <!-- Load Google Ads tag immediately -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17574639487"></script>
+    
+    <!-- Enhanced Google Tag Configuration -->
+    <script src="/gtag-config.js"></script>
 
     <!-- Critical CSS inline -->
     <style>

@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
+import ConversionTracking from "@/components/ConversionTracking";
 
 // Lazy load pages for better performance
 const Index = lazy(() => import("./pages/Index"));
@@ -39,6 +40,7 @@ const PageLoader = () => (
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <ConversionTracking />
       <Toaster />
       <Sonner />
       <BrowserRouter>
