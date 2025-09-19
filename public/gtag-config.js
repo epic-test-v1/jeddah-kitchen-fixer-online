@@ -22,7 +22,8 @@ const CONVERSION_ACTIONS = {
   PHONE_CALL: 'AW-17574639487/phone_call',
   WHATSAPP_CLICK: 'AW-17574639487/whatsapp_click', 
   FORM_SUBMISSION: 'AW-17574639487/form_submission',
-  SERVICE_REQUEST: 'AW-17574639487/service_request'
+  SERVICE_REQUEST: 'AW-17574639487/service_request',
+  CONTACT_CONVERSION: 'AW-17574639487/KH9BCMvsqZ0bEP_unrxB'
 };
 
 // Enhanced conversion tracking functions
@@ -57,5 +58,15 @@ window.trackServiceRequest = function(serviceType) {
     event_label: serviceType,
     value: 10,
     currency: 'SAR'
+  });
+};
+
+// Contact page conversion tracking
+window.trackContactConversion = function() {
+  window.trackConversion(CONVERSION_ACTIONS.CONTACT_CONVERSION, 1);
+  
+  // Fire the specific event snippet for contact conversion
+  gtag('event', 'conversion', {
+    'send_to': 'AW-17574639487/KH9BCMvsqZ0bEP_unrxB'
   });
 };

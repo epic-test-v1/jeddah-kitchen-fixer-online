@@ -68,12 +68,23 @@ const ConversionTracking = ({
     }
   };
 
+  // Track contact page conversions
+  const trackContactConversion = () => {
+    if (window.gtag) {
+      // Fire the specific event snippet for contact conversion
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17574639487/KH9BCMvsqZ0bEP_unrxB'
+      });
+    }
+  };
+
   useEffect(() => {
     // Make tracking functions globally available
     (window as any).trackPhoneCall = trackPhoneCall;
     (window as any).trackWhatsAppClick = trackWhatsAppClick;
     (window as any).trackFormSubmission = trackFormSubmission;
     (window as any).trackServiceRequest = trackServiceRequest;
+    (window as any).trackContactConversion = trackContactConversion;
   }, []);
 
   return null; // This component doesn't render anything
