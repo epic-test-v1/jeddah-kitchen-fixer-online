@@ -73,7 +73,7 @@ const ConversionTracking = ({
     if (window.gtag) {
       // Fire the specific event snippet for contact conversion
       window.gtag('event', 'conversion', {
-        'send_to': 'AW-17574639487/KH9BCMvsqZ0bEP_unrxB'
+        'send_to': 'AW-17574639487/WoIaCJ-ms50bEP_unrxB'
       });
     }
   };

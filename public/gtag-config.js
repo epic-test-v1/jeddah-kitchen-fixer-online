@@ -23,7 +23,7 @@ const CONVERSION_ACTIONS = {
   WHATSAPP_CLICK: 'AW-17574639487/whatsapp_click', 
   FORM_SUBMISSION: 'AW-17574639487/form_submission',
   SERVICE_REQUEST: 'AW-17574639487/service_request',
-  CONTACT_CONVERSION: 'AW-17574639487/KH9BCMvsqZ0bEP_unrxB'
+  CONTACT_CONVERSION: 'AW-17574639487/WoIaCJ-ms50bEP_unrxB'
 };
 
 // Enhanced conversion tracking functions
@@ -67,6 +67,6 @@ window.trackContactConversion = function() {
   
   // Fire the specific event snippet for contact conversion
   gtag('event', 'conversion', {
-    'send_to': 'AW-17574639487/KH9BCMvsqZ0bEP_unrxB'
+    'send_to': 'AW-17574639487/WoIaCJ-ms50bEP_unrxB'
   });
 };
