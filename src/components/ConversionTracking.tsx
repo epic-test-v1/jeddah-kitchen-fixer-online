@@ -78,6 +78,22 @@ const ConversionTracking = ({
     }
   };
 
+  // Other conversion tracking with callback
+  const gtagReportConversion = (url?: string) => {
+    if (window.gtag) {
+      const callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location.href = url;
+        }
+      };
+      window.gtag('event', 'conversion', {
+        'send_to': 'AW-17574639487/jLzoCN-Q4Z4bEP_unrxB',
+        'event_callback': callback
+      });
+    }
+    return false;
+  };
+
   useEffect(() => {
     // Make tracking functions globally available
     (window as any).trackPhoneCall = trackPhoneCall;
@@ -85,6 +101,7 @@ const ConversionTracking = ({
     (window as any).trackFormSubmission = trackFormSubmission;
     (window as any).trackServiceRequest = trackServiceRequest;
     (window as any).trackContactConversion = trackContactConversion;
+    (window as any).gtag_report_conversion = gtagReportConversion;
   }, []);
 
   return null; // This component doesn't render anything
